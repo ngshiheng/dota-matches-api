@@ -7,7 +7,7 @@ import { arr2hex, sha1 } from "./crypto"
 import { nowSeconds, seconds } from "./utils"
 
 const ONE_DAY = seconds("1 day")
-const THREE_HOURS = seconds("3 hours")
+const THREE_HOURS = seconds("30m")
 
 type Team = {
   name: string | null

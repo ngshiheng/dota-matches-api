@@ -1,15 +1,15 @@
 name = "dota-matches-api"
-account_id = "a2ae71949fd5eaebc354f81fb3b1deab"
+account_id = "19a745c88f8264f29c608584b7e417ab"
 compatibility_date = "2022-07-17"
 usage_model = "bundled"
 
-triggers = { crons = ["0 9 * * *"] }
-kv_namespaces = [{ binding = "CACHE", id = "36fe05a650434c41943c782672f104b4" }]
-r2_buckets = [{ binding = "WEBHOOKS", bucket_name = "dota-matches-webhooks" }]
+# triggers = {crons = ["0 9 * * *"]}
+kv_namespaces = [{binding = "CACHE", id = "ef6e3ce520544b088a26a00f1b27404a"}]
+# r2_buckets = [{ binding = "WEBHOOKS", bucket_name = "dota-matches-webhooks" }]
 
 [miniflare]
 kv_persist = true
-r2_persist = true
+r2_persist = false
 
 [vars]
 API_BASE = "https://dota-matches-api.beequeue.workers.dev"
